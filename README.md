@@ -20,6 +20,7 @@ Wire Pulse install anything.
 | `manifest/stable.jws` | The **signed** description of the current stable version: which installer, its SHA-256 fingerprint, size, release notes, how many people get it now. The apps read only this `.jws` file. |
 | `manifest/stable.json` | The same content, readable. It is byte-for-byte what is inside the signed file. |
 | `manifest/beta.jws`, `manifest/beta.json` | The same for the Beta channel (people who chose "Beta" in Settings). |
+| `manifest/android.jws`, `manifest/android.json` | The **signed** announcement of the current Android version (created by the first `android` command). Only the Android app reads it; the Windows files above never contain Android information. |
 | `keys/` | The **public** halves of the signing keys (`<id>.pub.pem`, `keys.json`). Published so anyone can check the signatures. The private halves are only on the release PC. |
 
 ## How an update reaches people (Windows)
@@ -247,8 +248,8 @@ with `-Force`: it continues from the last manifest your PC signed and publishes 
 ## Android
 
 Android updates come from Google Play (or the APK download page). After the new Android version is live in Google Play,
-publish the Android entry so the apps show their notification. Either host the APK here (the tool creates the release
-`android-v1.0.3` and links to it):
+announce it so the apps show their notification: the tool signs `manifest/android.jws`. Either host the APK here (the
+tool creates the release `android-v1.0.3` and links to it):
 
 ```powershell
 .\release.ps1 android -VersionName 1.0.3 -VersionCode 4 -Apk mobile\dist\1.0.3\WirePulse-1.0.3.apk
@@ -266,8 +267,9 @@ setup, signed with the certificate written in `release\android-signing-cert.txt`
 phone with a debug-signed install can never install the real one over it), any other certificate, and an APK built while
 the repository name was still `OWNER` (it would never look for updates). See `docs/RELEASING.md` section 6.
 
-Add `-Urgent` to make Google Play users go through Google Play's full-screen update right away. The Android entry lives
-in the stable manifest, so a Windows stable release must exist first.
+Add `-Urgent` to make Google Play users go through Google Play's full-screen update right away. The Windows manifests
+are not touched (Windows Wire Pulse 1.0.2 would stop updating if they contained Android information), so no Windows
+release is needed first. After a key rotation, run the last `android` command again (same values) to re-sign it.
 
 ---
 
@@ -283,7 +285,7 @@ in the stable manifest, so a Windows stable release must exist first.
 | `.\release.ps1 rollout -Channel C -Percent N` | Change the share (0-100) |
 | `.\release.ps1 halt -Channel C` | Kill switch (share 0) |
 | `.\release.ps1 pull -Version V [-To W]` | Withdraw a version; everybody on it moves to W |
-| `.\release.ps1 android -VersionName N -VersionCode C -Apk <file>` | Announce a new Android version (or `-DirectUrl <url>`) |
+| `.\release.ps1 android -VersionName N -VersionCode C -Apk <file>` | Announce a new Android version in `manifest/android.jws` (or `-DirectUrl <url>`) |
 | `.\release.ps1 protect-keys` | Once: protect the signing keys with your release passphrase |
 | `.\release.ps1 set-token` | Store a new GitHub token (under your release passphrase) |
 | `.\release.ps1 init` | Upload this README and the public keys |
