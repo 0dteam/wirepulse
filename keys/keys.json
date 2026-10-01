@@ -1,0 +1,23 @@
+{
+  "format": "wirepulse-update-keys/v1",
+  "algorithm": "ES256 (ECDSA P-256 with SHA-256, JWS compact serialization)",
+  "kid_rule": "first 16 characters of base64url(SHA-256(SubjectPublicKeyInfo DER))",
+  "trusted_by_apps": [
+    "67AKrfhbMxmQtj4H",
+    "zrJAXAjHGUvFNGxd"
+  ],
+  "keys": [
+    {
+      "kid": "67AKrfhbMxmQtj4H",
+      "role": "current",
+      "created": "2026-09-30T19:33:39Z",
+      "pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEPvu3jMZcObaDvUljEzuA1FPJxDOF\nYXDzWPDgkQ0WhgQ3x0EXFTUZzGN0qBeYxlyZnDVAnsOViWKJf6V/wAaWPA==\n-----END PUBLIC KEY-----\n"
+    },
+    {
+      "kid": "zrJAXAjHGUvFNGxd",
+      "role": "next",
+      "created": "2026-09-30T19:33:39Z",
+      "pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnHQWzjvrj3nLWT4FWLIsfwqFsX3u\nLfgRKk6nCFVc6zLiUy8vplJvCAHtCMknI6yJsZdwSFJ3ux8CU+3MQ584oA==\n-----END PUBLIC KEY-----\n"
+    }
+  ]
+}
