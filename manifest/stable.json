@@ -1,0 +1,30 @@
+{
+  "ctx": "wirepulse/update-manifest/v1",
+  "seq": 1790833682,
+  "channel": "stable",
+  "version": "1.0.2",
+  "released_at": "2026-10-01T05:48:02Z",
+  "urgent": false,
+  "rollout": 100,
+  "notes": {
+    "en": "• Automatic updates: new versions download in the background and install the next time you sign in to Windows (when Wire Pulse starts with Windows), or right away with Restart to update. Important fixes install as soon as they are downloaded.\n• Settings › General › Updates: check for updates, choose the Stable or Beta channel, or turn automatic updates off.",
+    "de": "• Automatische Updates: Neue Versionen werden im Hintergrund heruntergeladen und bei Ihrer nächsten Windows-Anmeldung installiert (wenn Wire Pulse mit Windows startet) – oder sofort mit „Zum Aktualisieren neu starten“. Wichtige Korrekturen werden installiert, sobald sie heruntergeladen sind.\n• Einstellungen › Allgemein › Updates: nach Updates suchen, den Kanal Stabil oder Beta wählen oder automatische Updates ausschalten.",
+    "es": "• Actualizaciones automáticas: las nuevas versiones se descargan en segundo plano y se instalan la próxima vez que inicias sesión en Windows (si Wire Pulse se inicia con Windows), o al momento con “Reiniciar para actualizar”. Las correcciones importantes se instalan en cuanto se descargan.\n• Configuración › General › Actualizaciones: buscar actualizaciones, elegir el canal Estable o Beta, o desactivar las actualizaciones automáticas.",
+    "fr": "• Mises à jour automatiques : les nouvelles versions sont téléchargées en arrière-plan et installées à votre prochaine ouverture de session Windows (si Wire Pulse démarre avec Windows), ou tout de suite avec « Redémarrer pour mettre à jour ». Les correctifs importants sont installés dès qu’ils sont téléchargés.\n• Paramètres › Général › Mises à jour : rechercher des mises à jour, choisir le canal Stable ou Bêta, ou désactiver les mises à jour automatiques.",
+    "pt-BR": "• Atualizações automáticas: as novas versões são baixadas em segundo plano e instaladas na próxima vez que você entrar no Windows (se o Wire Pulse iniciar com o Windows), ou na hora com “Reiniciar para atualizar”. Correções importantes são instaladas assim que baixadas.\n• Configurações › Geral › Atualizações: verificar atualizações, escolher o canal Estável ou Beta ou desativar as atualizações automáticas.",
+    "ru": "• Автоматические обновления: новые версии загружаются в фоновом режиме и устанавливаются при следующем входе в Windows (если Wire Pulse запускается вместе с Windows) или сразу — по команде «Перезапустить и обновить». Важные исправления устанавливаются сразу после загрузки.\n• Параметры › Общие › Обновления: проверить обновления, выбрать канал «Стабильный» или «Бета» или отключить автоматические обновления.",
+    "ja": "• 自動更新: 新しいバージョンはバックグラウンドでダウンロードされ、次回 Windows にサインインしたとき (Wire Pulse が Windows と一緒に起動する場合)、または「再起動して更新」ですぐにインストールされます。重要な修正はダウンロードが終わるとすぐにインストールされます。\n• 設定 › 全般 › 更新: 更新の確認、安定版またはベータ版のチャネルの選択、自動更新のオフができます。",
+    "zh-CN": "• 自动更新：新版本在后台下载，并在你下次登录 Windows 时安装（如果 Wire Pulse 随 Windows 启动），也可以通过“重启以更新”立即安装。重要修复在下载完成后立即安装。\n• 设置 › 常规 › 更新：检查更新、选择稳定版或测试版通道，或关闭自动更新。",
+    "ar": "• التحديثات التلقائية: تُنزَّل الإصدارات الجديدة في الخلفية وتُثبَّت عند تسجيل دخولك إلى Windows في المرة القادمة (إذا كان Wire Pulse يبدأ مع Windows)، أو فورًا عبر «إعادة التشغيل للتحديث». تُثبَّت الإصلاحات المهمة فور تنزيلها.\n• الإعدادات › عام › التحديثات: التحقق من وجود تحديثات، أو اختيار القناة «مستقر» أو «تجريبي»، أو إيقاف التحديثات التلقائية."
+  },
+  "notes_url": "https://github.com/0dteam/wirepulse/releases/tag/v1.0.2",
+  "pulled": [],
+  "windows": {
+    "url": "https://github.com/0dteam/wirepulse/releases/download/v1.0.2/WirePulseSetup-1.0.2.exe",
+    "sha256": "162593a3060e27143fb57015f668247a1ccbc9ba8839a55cc66c45f15572d4bd",
+    "size": 59578975,
+    "min_os": "10.0.17763",
+    "arch": "x64"
+  },
+  "revoked_kids": []
+}
