@@ -1,0 +1,22 @@
+{
+  "ctx": "wirepulse/android-manifest/v1",
+  "seq": 1790920763,
+  "version_code": 4,
+  "version_name": "1.0.3",
+  "urgent": false,
+  "rollout": 100,
+  "notes": {
+    "en": "• Update notifications: Wire Pulse tells you when a new version is available (Settings › App updates).",
+    "de": "• Update-Benachrichtigungen: Wire Pulse meldet, wenn eine neue Version verfügbar ist (Einstellungen › App-Updates).",
+    "es": "• Avisos de actualización: Wire Pulse te avisa cuando hay una nueva versión disponible (Configuración › Actualizaciones de la aplicación).",
+    "fr": "• Notifications de mise à jour : Wire Pulse vous prévient quand une nouvelle version est disponible (Paramètres › Mises à jour de l’application).",
+    "pt-BR": "• Avisos de atualização: o Wire Pulse avisa quando uma nova versão está disponível (Configurações › Atualizações do aplicativo).",
+    "ru": "• Уведомления об обновлениях: Wire Pulse сообщает, когда доступна новая версия (Параметры › Обновления приложения).",
+    "ja": "• アップデートの通知: 新しいバージョンが利用可能になると Wire Pulse がお知らせします（設定 › アプリのアップデート）。",
+    "zh-CN": "• 更新通知：有新版本可用时，Wire Pulse 会通知你（设置 › 应用更新）。",
+    "ar": "• إشعارات التحديث: يُعلمك Wire Pulse عند توفر إصدار جديد (الإعدادات › تحديثات التطبيق)."
+  },
+  "play_url": "https://play.google.com/store/apps/details?id=ae.zerod.wirepulse",
+  "direct_url": "https://github.com/0dteam/wirepulse/releases/tag/android-v1.0.3",
+  "revoked_kids": []
+}
